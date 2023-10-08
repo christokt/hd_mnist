@@ -17,4 +17,8 @@ or
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 ```
 
-Since the hyperdimensional vectors take up a lot of memory, I ended up making a new variable hd_device that is set to 'cpu', this can be unchanged.
+Since the hyperdimensional vectors take up a lot of memory, I ended up making a new variable hd_device that is set to 'cpu', for handling the high memory computations. This can be left unchanged.
+
+```
+hd_device = torch.device('cpu')
+```
